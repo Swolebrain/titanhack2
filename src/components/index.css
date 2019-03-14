@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box !important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.flex-container{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container>img{
+    width: 40vw;
+    min-height: 400px;
+}
+
+/* clase para */
+.container-text-img{
+    display: flex;
+
+  background-image:url("../images/hero-squiggles.svg"); 
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.container-text-img>p{
+      flex-wrap: wrap;    
+    font-size: 1vw;
+    margin-left: 50px;
+}

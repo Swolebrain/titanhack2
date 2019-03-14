@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box !important;
+}
+
+.spacers{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.circle-container{
+    position: relative;
+    width: 30em;
+    height: 30em;
+    padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+
+    border-radius: 50%;
+    margin: 1.75em auto 0;
+    background-color: #6666ff;
+}
+
+.circle-container a {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em; /* 2em = 4em/2 */ /* half the width */
+}
+
+
+
+.circle-container p{
+    color: white;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 20em; height: 18em;
+    margin: -10em; /* 2em = 4em/2 */ /* half the width */
+}
+
+.circle-container img { display: block; width: 100%; }
+
+
+.deg0 {
+    -webkit-transform: translate(15em);
+    -moz-transform: translate(15em);
+    -ms-transform: translate(15em);
+    -o-transform: translate(15em);
+    transform: translate(15em);
+} /* 12em = half the width of the wrapper */
+.lt-ie9 .deg0 {
+    margin-left: 10em;
+}
+
+.deg45 {
+    -webkit-transform: rotate(45deg) translate(15em) rotate(-45deg);
+    -moz-transform: rotate(45deg) translate(15em) rotate(-45deg);
+    -ms-transform: rotate(45deg) translate(15em) rotate(-45deg);
+    -o-transform: rotate(45deg) translate(15em) rotate(-45deg);
+    transform: rotate(45deg) translate(15em) rotate(-45deg);
+}
+.lt-ie9 .deg45 {
+    margin: 6.485em;
+}
+
+.deg135 {
+    -webkit-transform: rotate(135deg) translate(15em) rotate(-135deg);
+    -moz-transform: rotate(135deg) translate(15em) rotate(-135deg);
+    -ms-transform: rotate(135deg) translate(15em) rotate(-135deg);
+    -o-transform: rotate(135deg) translate(15em) rotate(-135deg);
+    transform: rotate(135deg) translate(15em) rotate(-135deg);
+}
+.lt-ie9 .deg135 {
+    margin: 6.485em -10.485em;
+}
+
+.deg180 {
+    -webkit-transform: translate(-15em);
+    -moz-transform: translate(-15em);
+    -ms-transform: translate(-15em);
+    -o-transform: translate(-15em);
+    transform: translate(-15em);
+}
+.lt-ie9 .deg180 {
+    margin-left: -14em;
+}
+
+.deg90 {
+    -webkit-transform: rotate(90deg) translate(15em) rotate(-90deg);
+    -moz-transform: rotate(90deg) translate(15em) rotate(-90deg);
+    -ms-transform: rotate(90deg) translate(15em) rotate(-90deg);
+    -o-transform: rotate(90deg) translate(15em) rotate(-90deg);
+    transform: rotate(90deg) translate(15em) rotate(-90deg);
+}
+.lt-ie9 .deg90 {
+    margin: -10.485em;
+}
+
+
+/* this is just for showing the angle on hover */
+.circle-container a:not(.center):before {
+    position: absolute;
+    width: 3.15em;
+    height: 3.10em;
+    color: white;
+    opacity: 0;
+    background: rgba(0,0,0,.5);
+    font: 1.25em/3.45 Courier, monospace;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: .4s; /* only works in Firefox */
+    content: ' ';
+    border-radius: 50%;
+}
+.circle-container a:hover:before { opacity: 1; }

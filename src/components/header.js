@@ -28,6 +28,8 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+        <div>         <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/resources/">Go to test pen</Link></div>
   </header>
 )
 
