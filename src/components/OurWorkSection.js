@@ -10,6 +10,7 @@ export default function OurWorkSection(props){
             <OurWorkCard projectName="Kiddie Kredit" urlImage={KiddieKreditImg}
                          aboutProject="A mobile app experience teaching financial literacy for all."/>
             <OurWorkCard projectName="UV Vector" urlImage={UvVectorImg}
+                         direction="right"
                          aboutProject="A entertaiment app experience looking to dance."/>
         </>
     );
