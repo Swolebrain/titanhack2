@@ -9,33 +9,33 @@ import OurWorkCard from "../components/ourworkcard"
 
 import "../components/index.css"
 import "../fonts/Montserrat/montserrat.css"
+import "../fonts/PlayfairDisplay/playfairdisplay.css"
 import "../fonts/AlegreyaSans/alegreyasans.css"
 
 import HeroSquiggles from '../images/hero-squiggles.svg';
 import PcHero from '../images/hero-pc.svg';
 import KiddieKreditImg from '../images/kiddiekredit.svg';
 import UvVectorImg from '../images/uv_vector.svg';
+import OurWorkSection from "../components/OurWorkSection";
 
-const IndexPage = () => ( 
-    <Layout >
-    < SEO title = "Home"  keywords = {[`gatsby`, `application`, `react`]}/>
+const IndexPage = () => (
+    <Layout>
+        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
 
-    <div className = "flex-container">
-      <div className = "container-text-img">
-        <img src = {HeroSquiggles} alt = "pc squiggles" />
-            <div className="centered-text">
-              <h1> Hello, we are <span className = "text-titanhack"> Titanhack </span> </h1> 
-              <p> A software Engineering XO Based in Miami, FL </p>              
-            </div> 
-      </div> 
-      <img src = {PcHero} alt = "pc hero" />
-    </div> 
+        <div className="hero-container">
+            <img src={HeroSquiggles} alt="pc squiggles" className={"hero-squiggles"}/>
+            <div className="container-text-img">
+                <h1> Hello, we are <span className="text-titanhack"> Titanhack </span></h1>
+                <p> A software Engineering XO Based in Miami, FL </p>
+            </div>
+            <img src={PcHero} alt="pc hero" style={{height: '95vh'}}/>
+        </div>
 
-    <WhatWeDoSection />
-    <OurWorkCard projectName="Kiddie Kredit" urlImage={KiddieKreditImg}
-        aboutProject="A mobile app experience teaching financial literacy for all." />
-    <OurWorkCard projectName="UV Vector" urlImage={UvVectorImg}  
-        aboutProject="A entertaiment app experience looking to dance." />
+        <WhatWeDoSection/>
+
+        <OurWorkSection />
+
+
 
     </Layout>
 )
