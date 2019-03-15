@@ -2,34 +2,22 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import  './header.css'
+import "../fonts/Montserrat/montserrat.css"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-        <div>         <Link to="/page-2/">Go to page 2</Link>
-    <Link to="/resources/">Go to test pen</Link></div>
+  <header>
+        <div className="header-container">
+            <div className="header-logo">
+                <h1>logo</h1>
+            </div>
+            <div className="header-menu">  
+                <Link to="/page-2/" className="link-nav" >Home</Link>
+                <Link to="/resources/" className="link-nav">Team</Link>
+                <Link to="/page-2/" className="link-nav" >Blog</Link>
+                <Link to="/resources/" className="link-nav">Resources</Link>
+            </div>
+        </div>        
   </header>
 )
 

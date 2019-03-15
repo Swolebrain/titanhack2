@@ -2,13 +2,12 @@
     box-sizing: border-box !important;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-
-.flex-container{
+.flex-container {
     margin: 0;
     width: 100%;
     display: flex;
@@ -16,25 +15,46 @@ body{
     align-items: center;
 }
 
-.flex-container>img{
-    width: 40vw;
-    min-height: 400px;
+.flex-container > img {
+    width: 60vw;
+    height: 680px;
 }
 
-/* clase para */
-.container-text-img{
+
+.container-text-img {
     display: flex;
-
-  background-image:url("../images/hero-squiggles.svg"); 
-  background-repeat: no-repeat;
-  background-size: 100% 500px;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.container-text-img>img{
+     width: 40vw;
+    height: 680px;
 }
 
-.container-text-img>p{
-      flex-wrap: wrap;    
-    font-size: 1vw;
-    margin-left: 50px;
+
+.text-titanhack{
+    color: #7b2bad;
 }
+
+.centered-text{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-45%, -50%);
+}
+
+.centered-text > h1 {
+    font-family: "Slabo 27px", serif;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 70px;
+}
+
+.centered-text > p {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-weight: 400;
+}
+
