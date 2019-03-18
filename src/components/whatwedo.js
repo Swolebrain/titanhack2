@@ -1,4 +1,5 @@
 import React from "react"
+import TitleSection from "./TitleSection";
 
 import  "./whatwedo.css"
 
@@ -30,8 +31,10 @@ export default  class WhatWeDoSection extends React.Component{
     
     render(){
         return(
+            <>
+            <TitleSection title="What We Do" backgroundTitle="What We Do"/>
             <div class="spacers">
-                <div className='circle-container '>
+                <div className='circle-container'>
                     <p className='center'>{this.state.textarea}</p>
                     <a href='' className='deg0' onMouseEnter={()=>this.logOnMouseEnter( this.state.texts[0])} onMouseLeave={this.logOnMouseLeave}>
                         <img src='https://img.icons8.com/flat_round/64/000000/share.png' />
@@ -52,6 +55,7 @@ export default  class WhatWeDoSection extends React.Component{
 
                 </div>
             </div>
+            </>
         );
     }
 }

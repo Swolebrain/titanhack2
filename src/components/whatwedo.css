@@ -9,6 +9,9 @@
 
 
 .circle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 30em;
     height: 30em;
@@ -30,16 +33,20 @@
 
 
 
-.circle-container p{
+.center{
     color: white;
     font-weight: 600;
     display: block;
-    text-align: center;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
     overflow: hidden;
     position: absolute;
     top: 50%; left: 50%;
     width: 20em; height: 18em;
     margin: -10em; /* 2em = 4em/2 */ /* half the width */
+    
 }
 
 .circle-container img { display: block; width: 100%; }

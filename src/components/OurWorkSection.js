@@ -1,16 +1,24 @@
 import React from 'react';
-import OurWorkCard from "./ourworkcard";
+import OurWorkCard from "./OurWorkCard";
+import TitleSection from "./TitleSection";
+
 import KiddieKreditImg from "../images/kiddiekredit.svg";
 import UvVectorImg from "../images/uv_vector.svg";
+
+const fountainBlue = "#68C1BD";
+const shuttleGrey = "#576271";
+const primaryUV = "#C43077";
+const secondaryUV = "#100c07";
+
 
 export default function OurWorkSection(props){
     return (
         <>
-            <h1>Our Work</h1>
-            <OurWorkCard projectName="Kiddie Kredit" urlImage={KiddieKreditImg}
+            <TitleSection title="Our Work" backgroundTitle="WORK"/>
+            <OurWorkCard projectName="Kiddie Kredit" urlImage={KiddieKreditImg}  primaryColor={fountainBlue} secondaryColor={shuttleGrey}
                          aboutProject="A mobile app experience teaching financial literacy for all."/>
             <OurWorkCard projectName="UV Vector" urlImage={UvVectorImg}
-                         direction="right"
+                         direction="right"  primaryColor={primaryUV} secondaryColor={secondaryUV}
                          aboutProject="A entertaiment app experience looking to dance."/>
         </>
     );

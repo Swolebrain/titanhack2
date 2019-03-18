@@ -4,12 +4,14 @@ import React from "react"
 
 import  './header.css'
 import "../fonts/Montserrat/montserrat.css"
+import titanhacklogo from '../images/titanhack-black.png';
+
 
 const Header = ({ siteTitle }) => (
   <header>
         <div className="header-container">
             <div className="header-logo">
-                <h1>logo</h1>
+                <img src={titanhacklogo} style={{height: '40px',width: '40px'}} />
             </div>
             <div className="header-menu">  
                 <Link to="/page-2/" className="link-nav" >Home</Link>

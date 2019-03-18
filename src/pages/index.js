@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import WhatWeDoSection from "../components/whatwedo"
-import OurWorkCard from "../components/ourworkcard"
+
 
 import "../components/index.css"
 import "../fonts/Montserrat/montserrat.css"
@@ -25,14 +25,13 @@ const IndexPage = () => (
         <div className="hero-container">
             <img src={HeroSquiggles} alt="pc squiggles" className={"hero-squiggles"}/>
             <div className="container-text-img">
-                <h1> Hello, we are <span className="text-titanhack"> Titanhack </span></h1>
+                <h1> Hello, we are <span className="text-titanhack"> TitanHack </span></h1>
                 <p> A software Engineering XO Based in Miami, FL </p>
             </div>
-            <img src={PcHero} alt="pc hero" style={{height: '95vh'}}/>
+            <img src={PcHero} alt="pc hero" style={{height: '95vh'}} className={"hero-pc"}/>
         </div>
 
         <WhatWeDoSection/>
-
         <OurWorkSection />
 
 
