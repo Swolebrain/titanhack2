@@ -5,56 +5,61 @@ import  "./whatwedo.css"
 
 export default  class WhatWeDoSection extends React.Component{
     state={
+        title:"",
         textarea:"",
         texts : [
            "We design full fledged solutions for both Android and iOS, including highly scalable back end infrastructure",
            "We help define the scope of your project so that your MVP is minimal enough to fit within your budget but also robust enough to gain traction",
            "dashboards and data visualization to help you sail your scaling ship",
            "Use VR or Augmented Reality to lend an aura of innovation to your business",
-           "automate manual work by connecting your data sources together - don't waste time manually merging data in excel any more!"
+           "Automate manual work by connecting your data sources together - don't waste time manually merging data in excel any more!"
         ]
     }
     
      
-    
-    logOnMouseEnter =(stringToShow) =>{
+    logOnMouseEnter =(titleToShow,stringToShow) =>{
         this.setState({
+            title: titleToShow,
             textarea: stringToShow
         });    
     }
     
-    logOnMouseLeave =() =>{
+    deleteInfo =() =>{
         this.setState({
+            title: "",
             textarea: ""
-        });   
+        });    
     }
-    
+        
+        
     render(){
         return(
             <>
             <TitleSection title="What We Do" backgroundTitle="What We Do"/>
-            <div class="spacers">
-                <div className='circle-container'>
-                    <p className='center'>{this.state.textarea}</p>
-                    <a href='' className='deg0' onMouseEnter={()=>this.logOnMouseEnter( this.state.texts[0])} onMouseLeave={this.logOnMouseLeave}>
-                        <img src='https://img.icons8.com/flat_round/64/000000/share.png' />
-                    </a>
-                    <a href='' className='deg45' onMouseEnter={()=>this.logOnMouseEnter( this.state.texts[1])} onMouseLeave={this.logOnMouseLeave}>
-                        <img src='https://img.icons8.com/flat_round/64/000000/share.png' />
-                    </a>
-                     <a href='' className='deg90' onMouseEnter={()=>this.logOnMouseEnter( this.state.texts[2])} onMouseLeave={this.logOnMouseLeave}>
-                         <img src='https://img.icons8.com/flat_round/64/000000/share.png'/>
-                    </a>
-                    <a href='' className='deg135' onMouseEnter={()=>this.logOnMouseEnter( this.state.texts[3])} onMouseLeave={this.logOnMouseLeave}>
-                        <img src='https://img.icons8.com/flat_round/64/000000/share.png'/>
-                    </a>
-                    <a href='' className='deg180' onMouseEnter={()=>this.logOnMouseEnter( this.state.texts[4])} onMouseLeave={this.logOnMouseLeave}>
-                        <img src='https://img.icons8.com/flat_round/64/000000/share.png'/>
-                    </a>
+                <div className='circle-container'>     
                    
+                    <a href='' className='deg0'  onMouseEnter={()=>this.logOnMouseEnter( "Mobile Apps",this.state.texts[0])}  
+                        onMouseLeave={this.deleteInfo}>
+                        <img src="https://img.icons8.com/dusk/64/000000/touchscreen-smartphone.png" />
+                    </a>
+                    <a href='' className='deg90' onMouseEnter={()=>this.logOnMouseEnter("Business Intelligence", this.state.texts[2])} >
+                         <img src='https://img.icons8.com/flat_round/64/000000/presentation.png'/>
+                    </a>
+                    <a href='' className='deg45' onMouseEnter={()=>this.logOnMouseEnter("Tech Strategy", this.state.texts[1])} >
+                        <img src='https://img.icons8.com/flat_round/64/000000/share.png' />
+                    </a>
 
+                    <a href='' className='deg135' onMouseEnter={()=>this.logOnMouseEnter("AR/VR", this.state.texts[3])} >
+                        <img src='https://img.icons8.com/flat_round/64/000000/share.png'/>
+                    </a>
+                    <a href='' className='deg180' onMouseEnter={()=>this.logOnMouseEnter("Systems Integrations", this.state.texts[4])} >
+                        <img src="https://img.icons8.com/color/48/000000/networking-manager.png"/>
+                    </a>
+                    
+                    <div id={"overlay"} className={"childflex blurb"}> <p>{this.state.title} </p><p>{this.state.textarea}</p></div>
+                    <div id={"center"} className={"childflex"}> <p>Our Services</p></div>           
                 </div>
-            </div>
+
             </>
         );
     }
