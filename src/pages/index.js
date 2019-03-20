@@ -18,6 +18,7 @@ import KiddieKreditImg from '../images/kiddiekredit.svg';
 import UvVectorImg from '../images/uv_vector.svg';
 import OurWorkSection from "../components/OurWorkSection";
 
+
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
@@ -33,8 +34,6 @@ const IndexPage = () => (
 
         <WhatWeDoSection/>
         <OurWorkSection />
-
-
 
     </Layout>
 )
