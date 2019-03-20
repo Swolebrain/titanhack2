@@ -9,11 +9,16 @@ body{
 }
 
 footer{
-    margin-top: 4rem;
+    margin-top: 14rem;
     width: 100vw;
     min-height: 400px;
     background-image: url("../images/footer_bg.svg");
     position: relative;
+}
+
+.footer-bg{
+    display: flex;  
+    justify-content: center;
 }
 
 .footer__phone{
@@ -22,4 +27,51 @@ footer{
     left: 10%;
     width: 80vw;
     max-width: 400px;
+}
+.footer-subsection{
+    padding-left: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-subsection-social-links{
+ padding-top: 3.756rem;   
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-link{    
+    max-width: 48px;
+    max-height: 48px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.question{
+        
+  letter-spacing: 0.2em;   
+  color: #fff;    
+}
+
+.button-sct{
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.btn-lets-talk {
+    border-radius: 25px;
+    background-color: #c13ff7;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    padding: 16px 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: .688rem;
+    line-height: 18px;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
 }
