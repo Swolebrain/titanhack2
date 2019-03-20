@@ -3,6 +3,9 @@ import TitleSection from "./TitleSection";
 
 import  "./whatwedo.css"
 import SistemIntegrationIcon from "../images/sistemintegration.svg"
+import TechStrategyIcon from "../images/techstrategy.png";
+import BussinesIntelligenceIcon from "../images/bussinessIntelligence.png";
+import MobileAppIcon from "../images/mobileApp.png";
 
 export default  class WhatWeDoSection extends React.Component{
     state={
@@ -39,21 +42,21 @@ export default  class WhatWeDoSection extends React.Component{
             <TitleSection title="What We Do" backgroundTitle="What We Do"/>
                 <div className='circle-container'>     
                    
-                    <a href='' className='deg0'  onMouseEnter={()=>this.logOnMouseEnter( "Mobile Apps",this.state.texts[0])}  
+                    <a href='' className='deg180'  onMouseEnter={()=>this.logOnMouseEnter( "Mobile Apps",this.state.texts[0])}  
                         onMouseLeave={this.deleteInfo}>
-                        <img src="https://img.icons8.com/dusk/64/000000/touchscreen-smartphone.png" />
+                        <img src={MobileAppIcon} />
                     </a>
                     <a href='' className='deg90' onMouseEnter={()=>this.logOnMouseEnter("Business Intelligence", this.state.texts[2])} onMouseLeave={this.deleteInfo}>
-                         <img src='https://img.icons8.com/flat_round/64/000000/presentation.png'/>
+                         <img src={BussinesIntelligenceIcon}/>
                     </a>
-                    <a href='' className='deg45' onMouseEnter={()=>this.logOnMouseEnter("Tech Strategy", this.state.texts[1])} onMouseLeave={this.deleteInfo}>
-                        <img src='https://img.icons8.com/flat_round/64/000000/share.png' />
+                    <a href='' className='deg135' onMouseEnter={()=>this.logOnMouseEnter("Tech Strategy", this.state.texts[1])} onMouseLeave={this.deleteInfo}>
+                        <img src={TechStrategyIcon}/>
                     </a>
 
-                    <a href='' className='deg135' onMouseEnter={()=>this.logOnMouseEnter("AR/VR", this.state.texts[3])} onMouseLeave={this.deleteInfo}>
+                    <a href='' className='deg45' onMouseEnter={()=>this.logOnMouseEnter("AR/VR", this.state.texts[3])} onMouseLeave={this.deleteInfo}>
                         <img src='https://img.icons8.com/flat_round/64/000000/share.png'/>
                     </a>
-                    <a href='' className='deg180' onMouseEnter={()=>this.logOnMouseEnter("Systems Integrations", this.state.texts[4])} onMouseLeave={this.deleteInfo}>
+                    <a href='' className='deg0' onMouseEnter={()=>this.logOnMouseEnter("Systems Integrations", this.state.texts[4])} onMouseLeave={this.deleteInfo}>
                         <img src={SistemIntegrationIcon}/>
                     </a>
                     

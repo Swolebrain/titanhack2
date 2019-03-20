@@ -17,6 +17,8 @@ import spiral from '../images/footer_bg_spirals.svg';
 import phone from '../images/footer-phone.svg';
 import YouTubeImg from "../images/youtube.png";
 
+
+
 const Layout = ({children}) => (
     <StaticQuery
         query={graphql`
@@ -41,11 +43,10 @@ const Layout = ({children}) => (
                     <div className={"question"}><big><h3>Do you have a project in mind?</h3></big></div>
                         <div className={"button-sct"}><a href="" className="btn-lets-talk">Talk with us!</a>
                             <div className={"footer-subsection-social-links"}>
-                                <a href=""><img src={YouTubeImg} className={"social-link"} /></a>
+                                <a target="_blank" href="https://www.youtube.com/thecodingteacher"><img src={YouTubeImg} className={"social-link"} /></a>
                                  <a href=""><img src={YouTubeImg} className={"social-link"} /></a>
                             </div>
-                       </div>
-                        
+                        </div>
                 </div>
                 </footer>
             </>
