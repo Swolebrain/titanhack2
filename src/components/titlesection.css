@@ -1,9 +1,9 @@
-.container {
+.section-title-container {
     display: flex;
     margin: 15vw 0 0 0;
 }
 
-.box {
+.section-title-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     width: 100%;
 }
 
-.box-title {
+.section-title-box-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
