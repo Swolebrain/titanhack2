@@ -5,12 +5,14 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import WhatWeDoSection from "../components/whatwedo"
+import Helmet from 'react-helmet'
 
 
 import "../components/index.css"
 import "../fonts/Montserrat/montserrat.css"
 import "../fonts/PlayfairDisplay/playfairdisplay.css"
 import "../fonts/AlegreyaSans/alegreyasans.css"
+import favicon from '../images/titanhack-black.png'
 
 import HeroSquiggles from '../images/hero-squiggles.svg';
 import PcHero from '../images/hero-pc.svg';
@@ -20,7 +22,7 @@ import OurWorkSection from "../components/OurWorkSection";
 
 
 const IndexPage = () => (
-    <Layout>
+    <Layout>        
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
 
         <div className="hero-container">

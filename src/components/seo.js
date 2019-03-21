@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import favicon from '../images/titanhack-black.png';
+
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -34,6 +36,9 @@ function SEO({ description, lang, meta, keywords, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+        link={[
+            { rel: `shortcut icon`, type: `image/png`, href: `${favicon}` }
+        ]}
       meta={[
         {
           name: `description`,
@@ -68,15 +73,14 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription,
         },
       ]
-        .concat(
-          keywords.length > 0
-            ? {
+        .concat( keywords.length > 0 ? {
                 name: `keywords`,
                 content: keywords.join(`, `),
               }
             : []
         )
         .concat(meta)}
+        
     />
   )
 }

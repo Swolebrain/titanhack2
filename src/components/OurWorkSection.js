@@ -15,11 +15,12 @@ export default function OurWorkSection(props){
     return (
         <>
             <TitleSection title="Our Work" backgroundTitle="WORK"/>
-            <OurWorkCard projectName="Kiddie Kredit" urlImage={KiddieKreditImg}  primaryColor={fountainBlue} secondaryColor={shuttleGrey}
+            <OurWorkCard projectName="Kiddie Kredit" urlImage={KiddieKreditImg} urlWebSite="https://www.kiddiekredit.com/" 
+                         primaryColor={fountainBlue} secondaryColor={shuttleGrey}
                          aboutProject="A mobile app experience teaching financial literacy for all."/>
-            <OurWorkCard projectName="UV Vector" urlImage={UvVectorImg}
+            <OurWorkCard projectName="UV Latin Dance Online" urlImage={UvVectorImg}  urlWebSite="https://www.uvlatindanceonline.com"
                          direction="right"  primaryColor={primaryUV} secondaryColor={secondaryUV}
-                         aboutProject="A entertaiment app experience looking to dance."/>
+                         aboutProject="Learn to dance online."/>
         </>
     );
 }
