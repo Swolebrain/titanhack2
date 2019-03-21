@@ -2,6 +2,7 @@ import React from 'react';
 import OurWorkCard from "./OurWorkCard";
 import TitleSection from "./TitleSection";
 
+
 import KiddieKreditImg from "../images/kiddiekredit.svg";
 import UvVectorImg from "../images/uv_vector.svg";
 
@@ -20,7 +21,7 @@ export default function OurWorkSection(props){
                          aboutProject="A mobile app experience teaching financial literacy for all."/>
             <OurWorkCard projectName="UV Latin Dance" urlImage={UvVectorImg}  urlWebSite="https://www.uvlatindanceonline.com"
                          direction="right"  primaryColor={primaryUV} secondaryColor={secondaryUV}
-                         aboutProject="Learn to dance online."/>
+                         aboutProject="Learn to dance online."/>        
         </>
     );
 }

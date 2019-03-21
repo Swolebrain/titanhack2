@@ -1,37 +1,51 @@
-.section-title-container {
+.container {
+    display: flex;
+    margin: 15vw 0 0 0;
+}
+
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0 0 0;
+    min-width: 100%;
+    width: 100%;
 }
 
+.box-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    width: 100%;
+}
 
-.section-background-title {
+.text{
+    margin: 0;
+}
+
+.text-background {
     color: #7b2bad;
-    position: relative;
-    top: 20px;
+    z-index: 1;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 7.5rem;
     text-transform: uppercase;
-    letter-spacing: 4px;
     opacity: .07;
 }
 
-.section-title {
-    position: absolute;
+.text-foreground {
+    z-index: 2;
+    margin-left: -100%;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
-    padding: 0 0 20px;  
 }
 
-.section-title:before {
+.line {
     width: 40px;
     height: 1px;
+    margin-top: 2vh;
     content: '';
-    position: absolute;
-    bottom: 0;
-    left: 25%;
     background-color: #ef4b6c;
 }
