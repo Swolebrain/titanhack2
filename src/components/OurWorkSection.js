@@ -18,7 +18,7 @@ export default function OurWorkSection(props){
             <OurWorkCard projectName="Kiddie Kredit" urlImage={KiddieKreditImg} urlWebSite="https://www.kiddiekredit.com/" 
                          primaryColor={fountainBlue} secondaryColor={shuttleGrey}
                          aboutProject="A mobile app experience teaching financial literacy for all."/>
-            <OurWorkCard projectName="UV Latin Dance Online" urlImage={UvVectorImg}  urlWebSite="https://www.uvlatindanceonline.com"
+            <OurWorkCard projectName="UV Latin Dance" urlImage={UvVectorImg}  urlWebSite="https://www.uvlatindanceonline.com"
                          direction="right"  primaryColor={primaryUV} secondaryColor={secondaryUV}
                          aboutProject="Learn to dance online."/>
         </>
