@@ -10,8 +10,8 @@ const NotFoundPage = () => (
       <div className={"main-container"}>
         <img src={PcHero} alt="pc hero" className={"working-img"}/> 
         <h1>Coming Soon</h1>
-        <span className={"span"}>Titanhack is currently working hard building this page !</span>
-        <a href="/" className="btn-work"   >Back To Home</a>
+        <span className={"paragraph-subtitle"}>Titanhack is currently working hard building this page !</span>
+        <a href="/" className="btn-work">Back To Home</a>
       </div>
   </>
 )
