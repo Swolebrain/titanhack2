@@ -1,14 +1,19 @@
 import React from "react"
+import Header from "../components/header"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import PcHero from '../images/hero-pc.svg';
+import "../components/404.css"
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <>
+      <Header siteTitle="titanhack"/>
+      <div className={"main-container"}>
+        <img src={PcHero} alt="pc hero" className={"working-img"}/> 
+        <h1>Coming Soon</h1>
+        <span className={"span"}>Titanhack is currently working hard building this page !</span>
+        <a href="/" className="btn-work"   >Back To Home</a>
+      </div>
+  </>
 )
 
 export default NotFoundPage

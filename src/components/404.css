@@ -1,0 +1,23 @@
+*{
+    --primary-color: #622eaa;
+    --secondary-color: #361366;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.working-img{
+    height: 65vh;
+    margin: 20px 0;
+}
+
+.span{
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: .9em;
+}
