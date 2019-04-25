@@ -14,10 +14,10 @@ const Header = ({ siteTitle }) => (
                 <img src={titanhacklogo} style={{height: '40px',width: '40px'}} />
             </div>
             <div className="header-menu">  
-                <Link to="/page-2/" className="link-nav" >Home</Link>
-                <Link to="/resources/" className="link-nav">Team</Link>
-                <Link to="/page-2/" className="link-nav" >Blog</Link>
-                <Link to="/resources/" className="link-nav">Resources</Link>
+                <Link to="/" className="link-nav" >Home</Link>
+                <Link to="/UP" className="link-nav">Team</Link>
+                <Link to="titanhack.com/blog" className="link-nav" >Blog</Link>
+                <Link to="/UP" className="link-nav">Resources</Link>
             </div>
         </div>        
   </header>

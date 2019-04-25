@@ -3,17 +3,55 @@
     --secondary-color: #361366;
 }
 
+.ornament {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ornament-top-left{
+    width: 33vw;
+    height: 70vh;
+    top:-5vw;
+    left:-5vw; 
+    background-image: url(../images/ornaments/ornamen-top-left.png);
+}
+
+.ornament-middle-right{
+    width: 25vw;
+    height: 60vh;
+    top: 35vh;
+    right:-18vw; 
+    background-image: url(../images/ornaments/ornamen-middle-right.png);
+}
+
+.ornament-middle-left{
+    width: 20vw;
+    height: 30vh;
+    bottom:-20vh;
+    left:-10vw; 
+    background-image: url(../images/ornaments/ornamen-middle-left.png);
+}
+
+.ornament-bottom-right{
+    width: 38vw;
+    height: 16vh;
+    right: -3vw;
+    bottom: -20vh;
+    background-image: url(../images/ornaments/ornamen-bottom-right.png);
+}
+
 .main-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 
 .working-img{
-    height: 65vh;
+    height: 50vh;
     margin: 20px 0;
+    border-radius: 15px;
 }
 
 .paragraph-subtitle{
@@ -24,3 +62,18 @@
     color: #88989d;
     font-weight: 500;
 }
+
+.btn-shadow{
+    box-shadow: 10px 16px 40px rgba(145, 80, 249, 0.46);
+}
+
+
+@media screen and (max-width: 768px) {
+    .ornament-bottom-right{
+        width: 45%;
+        height: 30px;
+        right: -5px;
+        bottom: -90px;
+        background-image: url(../images/ornaments/ornamen-bottom-right.png);
+    }
+  }
