@@ -36,6 +36,10 @@
 	align-items: center;
 }
 
+.text-container p{
+	padding: 20px;
+}
+
 .cube div {
 	position: absolute;
 	width: 350px;
@@ -164,6 +168,11 @@
 }
 
 
+/**/
+@keyframes spin-right-to-up {
+	from { transform: rotateY(-90deg); }
+	to { transform: rotateY(90deg); }
+}
 
 
 .icons {
@@ -178,6 +187,14 @@
 	display: block;
     width: 64px;
     height: 64px;
+}
+
+
+.icons-img:focus {
+	background-color: #7b2bad; 
+	border-radius: 25px;
+	outline: none;
+	transition: all 0.3s ease 0s;
 }
 
 .deg0 {

@@ -16,10 +16,8 @@ export default class Cube extends React.Component {
 		if (toFace === this.state.currentFace) return;
 		if (toFace === 'up' || toFace === 'down') {
 			this.refs.theCube.classList.add('vertical');
-		} else if (this.state.currentFace === 'up' || this.state.currentFace === 'down') {
-			console.log("entras en la animacion vertical a front");
-			console.log(`spin-${this.state.currentFace}-to-front`);
-			this.refs.theCube.setAttribute('style', `animation: spin-${this.state.currentFace}-to-front 0.5s 1 ease forwards, spin-front-to-${toFace} 1s 1 ease forwards`);
+		} else if (this.state.currentFace === 'up' || this.state.currentFace === 'down') {		
+			this.refs.theCube.setAttribute('style', `animation: spin-${this.state.currentFace}-to-front 1s  ease forwards, spin-front-to-${toFace} 1s ease 1.5s forwards`);
 			this.refs.theCube.classList.remove('vertical');
 			this.setState({ currentFace: toFace });
 			return;
@@ -34,11 +32,11 @@ export default class Cube extends React.Component {
 			<TitleSection title="What We Do" backgroundTitle="What We Do" />
 				<div className="cube-container">
 					<div className="icons-container">
-						<a onClick={() => this.transitionToFace('left')}> <img className={"icons-img deg180"} src={MobileAppIcon} /></a>
-						<a onClick={() => this.transitionToFace('right')}><img className={"icons-img deg135"} src={TechStrategyIcon} /></a>
-						<a onClick={() => this.transitionToFace('up')}> <img className={"icons-img deg90"} src={BussinesIntelligenceIcon} /></a>
-						<a onClick={() => this.transitionToFace('down')}> <img className={"icons-img deg45"} src={ARIcon} /></a>
-						<a onClick={() => this.transitionToFace('back')}><img className={"icons-img deg0"} src={SistemIntegrationIcon} /></a>
+						<a onClick={() => this.transitionToFace('left')} > <img className={"icons-img deg180"} src={MobileAppIcon} tabindex="0"/></a>
+						<a onClick={() => this.transitionToFace('right')} ><img className={"icons-img deg135"} src={TechStrategyIcon} tabindex="1"/></a>
+						<a onClick={() => this.transitionToFace('up')} > <img className={"icons-img deg90"} src={BussinesIntelligenceIcon} tabindex="2"/></a>
+						<a onClick={() => this.transitionToFace('down')} > <img className={"icons-img deg45"} src={ARIcon} tabindex="3"/></a>
+						<a onClick={() => this.transitionToFace('back')} ><img className={"icons-img deg0"} src={SistemIntegrationIcon} tabindex="4"/></a>
 					</div>
 					<div className="wrap">
 						<div className="cube" ref="theCube">
