@@ -13,7 +13,6 @@ import Header from "./header"
 import "./layout.css"
 
 //images
-import spiral from '../images/footer_bg_spirals.svg';
 import phone from '../images/footer-phone.svg';
 import YouTubeImg from "../images/youtube.png";
 

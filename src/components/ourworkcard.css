@@ -14,6 +14,7 @@
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
+    max-width: 940px;
     width: 75%;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -36,6 +37,7 @@
     border-radius: 20px 0 0 20px;
     background: var(--primary-color);
     background: linear-gradient(159deg, var(--primary-color) 25%, var(--secondary-color) 100%);
+    width: 50%;
     height: 450px;
     padding-left: 25px;
     padding-right: 25px;
@@ -45,6 +47,7 @@
     border-radius: 0 20px 20px 0;
      background: var(--primary-color);
     background: linear-gradient(159deg, var(--primary-color) 25%, var(--secondary-color) 100%);
+    width: 50%;
     height: 450px;
     padding-left: 25px;
     padding-right: 25px;
@@ -56,12 +59,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35vw;
+    width: 50%;
 }
 
 .about-project-description {
     margin-bottom: 50px;
-    font-size: .8rem;
+    font-size: .72rem;
     line-height: 24px;
     letter-spacing: 1.2px;
     color: #8c93bd;
@@ -87,3 +90,14 @@
 .btn-work:hover {
     background-color: var(--secondary-color);
 }
+
+
+/*
+@media screen and  (max-width: 768px) {  
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}*/

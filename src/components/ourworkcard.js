@@ -2,7 +2,6 @@ import React from "react"
 
 import "./ourworkcard.css"
 import "../fonts/AlegreyaSans/alegreyasans.css"
-import "../fonts/PlayfairDisplay/playfairdisplay.css"
 import "../fonts/Slabo27px/slabo27px.css"
 
 
