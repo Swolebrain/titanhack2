@@ -16,10 +16,25 @@ footer{
     position: relative;
 }
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
 .footer-bg{
     display: flex;  
     justify-content: center;
+    margin: 0;
 }
+
+.footer-triangle{
+    width: 100%;
+    height: auto;
+}
+
 
 .footer__phone{
     position: absolute;

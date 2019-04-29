@@ -1,13 +1,11 @@
 import React from "react"
-import {Link} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import WhatWeDoSection from "../components/cube"
+import WhatWeDoSection from "../components/WhatWeDo"
 
 import "../components/index.css"
 import "../fonts/Montserrat/montserrat.css"
-import "../fonts/PlayfairDisplay/playfairdisplay.css"
 import "../fonts/AlegreyaSans/alegreyasans.css"
 import "../fonts/titlefonts.css"
 
