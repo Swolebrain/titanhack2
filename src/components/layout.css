@@ -21,6 +21,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-top: 10vh;
 }
 
 
@@ -33,6 +34,7 @@ footer{
 .footer-triangle{
     width: 100%;
     height: auto;
+    margin-bottom: -1px;
 }
 
 

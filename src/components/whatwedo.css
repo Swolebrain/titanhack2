@@ -121,6 +121,39 @@
 }
 
 
+@keyframes spin-left-to-right {
+	from { transform: rotateY(90deg); }
+	to { transform: rotateY(-90deg); }
+}
+
+@keyframes spin-right-to-left {
+	from { transform: rotateY(-90deg); }
+	to { transform: rotateY(90deg); }
+}
+
+/* animaciones que involucra al back*/
+@keyframes spin-back-to-left {
+	from { transform: rotateY(180deg); }
+	to { transform: rotateY(90deg); }
+}
+
+@keyframes spin-back-to-right {
+	from { transform: rotateY(180deg); }
+	to { transform: rotateY(-90deg); }
+}
+
+@keyframes spin-left-to-back {
+	from { transform: rotateY(90deg); }
+	to { transform: rotateY(180deg); }	
+}
+
+@keyframes spin-right-to-back {
+	from { transform: rotateY(-90deg); }
+	to { transform: rotateY(180deg); }
+}
+
+
+
 .icons {
     overflow: hidden;
     width: 64px;
