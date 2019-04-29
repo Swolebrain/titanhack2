@@ -73,7 +73,7 @@
 
 .vertical {
 	margin: 0 auto; /* keeps the cube centered */
-	transform-origin: 0 200px;
+	transform-origin: 0 175px;
 }
 
 
@@ -151,6 +151,18 @@
 	from { transform: rotateY(-90deg); }
 	to { transform: rotateY(180deg); }
 }
+
+/* animaciones que involucra al down y up*/
+@keyframes spin-up-to-down {
+	from { transform: rotateX(-90deg); }
+	to { transform: rotateX(90deg); }
+}
+
+@keyframes spin-down-to-up {
+	from { transform: rotateX(90deg); }
+	to { transform: rotateX(-90deg); }
+}
+
 
 
 
