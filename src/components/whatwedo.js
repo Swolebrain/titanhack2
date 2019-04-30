@@ -14,15 +14,17 @@ export default class Cube extends React.Component {
 
 	transitionToFace = (toFace) => {
 		if (toFace === this.state.currentFace) return;
-		if (toFace === 'up' || toFace === 'down') {
-			this.refs.theCube.classList.add('vertical');
-		} else if (this.state.currentFace === 'up' || this.state.currentFace === 'down') {		
-			this.refs.theCube.setAttribute('style', `animation: spin-${this.state.currentFace}-to-front 1s  ease forwards, spin-front-to-${toFace} 1s ease 1.5s forwards`);
-			this.refs.theCube.classList.remove('vertical');
-			this.setState({ currentFace: toFace });
-			return;
+		if (this.state.currentFace === 'up' || this.state.currentFace === 'down') {
+			setTimeout(()=>{
+				this.refs.theCube.classList.remove('vertical');
+			},750);
 		}
-		this.refs.theCube.setAttribute('style', `animation: spin-${this.state.currentFace}-to-${toFace} 1s 1 ease forwards`);
+		this.refs.theCube.setAttribute('style', `animation: spin-${this.state.currentFace}-to-${toFace} 1.5s 1 ease  forwards`);
+		if (toFace === 'up' || toFace === 'down') {
+			setTimeout(()=>{
+				this.refs.theCube.classList.add('vertical');
+			},750);
+		}		
 		this.setState({ currentFace: toFace });
 	}
 

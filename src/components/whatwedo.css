@@ -114,16 +114,6 @@
 	to { transform: rotateX(90deg); }
 }
 
-@keyframes spin-up-to-front {
-	from { transform: rotateX(-90deg); }
-	to { transform: rotateX(0); }
-}
-
-@keyframes spin-down-to-front {
-	from { transform: rotateY(90deg); }
-	to { transform: rotateY(0deg); }
-}
-
 
 @keyframes spin-left-to-right {
 	from { transform: rotateY(90deg); }
@@ -135,7 +125,6 @@
 	to { transform: rotateY(90deg); }
 }
 
-/* animaciones que involucra al back*/
 @keyframes spin-back-to-left {
 	from { transform: rotateY(180deg); }
 	to { transform: rotateY(90deg); }
@@ -168,11 +157,92 @@
 }
 
 
-/**/
+/* KEYFRAMES  Multi-ejes*/
 @keyframes spin-right-to-up {
-	from { transform: rotateY(-90deg); }
-	to { transform: rotateY(90deg); }
+	0% { transform: rotateY(-90deg); }
+	50% { transform: rotateY(0deg); }
+	55% { transform: rotateX(0deg); }
+	100% { transform: rotateX(-90deg); }
 }
+
+@keyframes spin-up-to-right {
+	0% { transform: rotateX(-90deg); }
+	50% { transform: rotateX(0deg); }
+	55% { transform: rotateY(0deg); }
+	100% { transform: rotateY(-90deg); }
+}
+
+
+@keyframes spin-left-to-up {
+	0% { transform: rotateY(90deg); }
+	50% { transform: rotateY(0deg); }
+	55% { transform: rotateX(0deg); }
+	100% { transform: rotateX(-90deg); }
+}
+
+@keyframes spin-up-to-left {
+	0% { transform: rotateX(-90deg); }
+	50% { transform: rotateX(0deg); }
+	55% { transform: rotateY(0deg); }
+	100% { transform: rotateY(90deg); }
+}
+
+@keyframes spin-back-to-up {
+	0% { transform: rotateY(180deg); }
+	50% { transform: rotateY(0deg); }
+	55% { transform: rotateX(0deg); }
+	100% { transform: rotateX(-90deg); }
+}
+
+@keyframes spin-up-to-back {
+	0% { transform: rotateX(-90deg); }
+	50% { transform: rotateX(0deg); }
+	55% { transform: rotateY(0deg); }
+	100% { transform: rotateY(180deg); }
+}
+
+@keyframes spin-right-to-down {
+	0% { transform: rotateY(-90deg); }
+	50% { transform: rotateY(0deg); }
+	55% { transform: rotateX(0deg); }
+	100% { transform: rotateX(90deg); }
+}
+
+@keyframes spin-down-to-right {
+	0% { transform: rotateX(90deg); }
+	50% { transform: rotateX(0deg); }
+	55% { transform: rotateY(0deg); }
+	100% { transform: rotateY(-90deg); }
+}
+
+@keyframes spin-left-to-down {
+	0% { transform: rotateY(90deg); }
+	50% { transform: rotateY(0deg); }
+	55% { transform: rotateX(0deg); }
+	100% { transform: rotateX(90deg); }
+}
+
+@keyframes spin-down-to-left {
+	0% { transform: rotateX(90deg); }
+	50% { transform: rotateX(0deg); }
+	55% { transform: rotateY(0deg); }
+	100% { transform: rotateY(90deg); }
+}
+
+@keyframes spin-back-to-down {
+	0% { transform: rotateY(180deg); }
+	50% { transform: rotateY(0deg); }
+	55% { transform: rotateX(0deg); }
+	100% { transform: rotateX(90deg); }
+}
+
+@keyframes spin-down-to-back {
+	0% { transform: rotateX(90deg); }
+	50% { transform: rotateX(0deg); }
+	55% { transform: rotateY(0deg); }
+	100% { transform: rotateY(180deg); }
+}
+
 
 
 .icons {
@@ -197,11 +267,8 @@
 	transition: all 0.3s ease 0s;
 }
 
+
 .deg0 {
-    /*-webkit-transform: rotate(11deg) translate(25.7em) rotate(-11deg);
-    -moz-transform: rotate(11deg) translate(25.7em) rotate(-11deg);
-    -ms-transform: rotate(11deg) translate(25.7em) rotate(-11deg);
-    -o-transform: rotate(11deg) translate(25.7em) rotate(-11deg);*/
     transform: rotate(58deg) translate(165px) rotate(-58deg);
 } 
 
