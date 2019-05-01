@@ -29,7 +29,7 @@
     z-index: 1;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 7.5rem;
+    font-size: 10vw;
     text-transform: uppercase;
     opacity: .07;
 }
@@ -38,8 +38,8 @@
     z-index: 2;
     margin-left: -100%;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.3em;
 }
 
 .line {
