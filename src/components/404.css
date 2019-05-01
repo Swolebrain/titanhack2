@@ -49,7 +49,7 @@
 }
 
 .working-img{
-    height: 50vh;
+    width: 40vw;
     margin: 20px 0;
     border-radius: 15px;
 }
@@ -70,10 +70,22 @@
 
 @media screen and (max-width: 768px) {
     .ornament-bottom-right{
-        width: 45%;
-        height: 30px;
-        right: -5px;
-        bottom: -90px;
+        width: 50%;
+        height: 40px;
+        right: -20px;
+        bottom: -40px;
+        padding: 0;
+        margin: 0;
         background-image: url(../images/ornaments/ornamen-bottom-right.png);
     }
+
+
+    .ornament-middle-left{
+        width: 20vw;
+        height: 30vh;
+        bottom:-5vh;
+        left:-10vw; 
+        background-image: url(../images/ornaments/ornamen-middle-left.png);
+    }
+
   }
