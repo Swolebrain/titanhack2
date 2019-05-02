@@ -11,7 +11,7 @@ export default function OurWorkCard({urlImage, urlWebSite ,projectName, aboutPro
     return (
         <div className="card-container">
             <div className="card" style={direction !== "imageLeft" ? {flexDirection: 'row-reverse'}: {}} >
-                <img src={urlImage} alt="Kiddie Kredit" className={direction !== "imageLeft" ? "card-img-reverse" : "card-img"  } 
+                <img src={urlImage} alt="Project Image" className={direction !== "imageLeft" ? "card-img-reverse" : "card-img"  } 
                     style={ style }/>
                 <div class="text-container">
                     <h1 className={"project-name"}><b>{projectName}</b></h1>

@@ -4,7 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	margin-bottom: 600px;
+	margin-bottom: 90vh;
 }
 
 .icons-container{
@@ -38,9 +38,14 @@
 .cube div {
 	position: absolute;
 	width: 350px;
-    height: 350px;
+	height: 350px;
 	background-color: #7b2bad;
 	color: #ffffff;
+}
+
+.vertical {
+	margin: 0 auto; /* keeps the cube centered */
+	transform-origin: 0 175px;
 }
 
 .back {
@@ -65,16 +70,6 @@
 .front {
 	transform: translateZ(175px);
 }
-
-.test-color{
-	background-color: blue;
-}
-
-.vertical {
-	margin: 0 auto; /* keeps the cube centered */
-	transform-origin: 0 175px;
-}
-
 
 @keyframes spin-vertical {
 	from { transform: rotateX(0); }
@@ -270,4 +265,61 @@
 
 .deg180{
 	transform: rotate(122deg) translate(170px) rotate(-122deg);
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.cube-container{ margin-bottom:  70vh}
+
+	.cube { width: 250px;}
+
+	.cube div {
+		width: 250px;
+		height: 250px;
+	}
+	
+	.vertical {
+		margin: 0 auto; /* keeps the cube centered */
+		transform-origin: 0 125px;
+	}
+
+	.back {
+		transform: translateZ(-125px) rotateY(180deg);
+	}
+	.right {
+		transform: rotateY(-270deg) translateX(125px);
+	}
+	.left {
+		transform: rotateY(270deg) translateX(-125px);
+	}
+	.top {
+		transform: rotateX(-270deg)  translateY(-125px);
+	}
+	.bottom {
+		transform: rotateX(270deg) translateY(125px);
+	}
+	.front {
+		transform: translateZ(125px);
+	}
+	
+	.deg0,.deg45,.deg90,.deg135,.deg180 {
+		transform: translate(0);
+	} 
+	
+	.icons-container{
+		margin: 10vh 0;
+	}
+
+	.icons {
+		overflow: hidden;
+		width: 48px;
+		height: 48px;
+		z-index: 10;
+	}
+
+	.icons-img{
+		margin-right: 4vw;
+	}
+
 }
