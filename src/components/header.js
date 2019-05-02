@@ -23,9 +23,9 @@ const Header = ({ siteTitle }) => (
       </div>
       <div className="header-menu">
         <Link to="/" className="link-nav" >Home</Link>
-        <Link to="/UP" className="link-nav">Team</Link>
-        <Link to="titanhack.com/blog" className="link-nav" >Blog</Link>
-        <Link to="/UP" className="link-nav">Resources</Link>
+        <Link to="/404" className="link-nav">Team</Link>
+        <a target="_blank" href="http://www.titanhack.com/blog" className="link-nav" >Blog</a>
+        <Link to="/404" className="link-nav">Resources</Link>
       </div>
     </div>
   </header>
