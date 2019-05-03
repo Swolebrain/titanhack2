@@ -10,9 +10,7 @@ export default class ResourcesPage extends React.Component {
         counter: 1
     }
 
-    constructor(props){
-        super(props);
-    }
+
     componentDidMount(){}//disparan network requests
     shouldComponentUpdate(nextProps, nextState){} //para hacer optimizaciones de render - debo volver a hacer render? true/false
     componentDidUpdate(prevProps, prevState, snapshot){}

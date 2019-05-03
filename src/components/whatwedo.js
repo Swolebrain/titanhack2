@@ -38,11 +38,11 @@ export default class Cube extends React.Component {
 			<TitleSection title="What We Do" backgroundTitle="What We Do" />
 				<div className="cube-container">
 					<div className="icons-container">
-						<a onClick={() => this.transitionToFace('left')} > <img className={"icons-img deg180"} src={MobileAppIcon} tabindex="0"/></a>
-						<a onClick={() => this.transitionToFace('right')} ><img className={"icons-img deg135"} src={TechStrategyIcon} tabindex="1"/></a>
-						<a onClick={() => this.transitionToFace('up')} > <img className={"icons-img deg90"} src={BussinesIntelligenceIcon} tabindex="2"/></a>
-						<a onClick={() => this.transitionToFace('down')} > <img className={"icons-img deg45"} src={ARIcon} tabindex="3"/></a>
-						<a onClick={() => this.transitionToFace('back')} ><img className={"icons-img deg0"} src={SistemIntegrationIcon} tabindex="4"/></a>
+						<div onClick={() => this.transitionToFace('left')} > <img alt="Mobile Apps" className={"icons-img deg180"} src={MobileAppIcon} tabindex="0"/></div>
+						<div onClick={() => this.transitionToFace('right')} ><img alt="Tech Strategy" className={"icons-img deg135"} src={TechStrategyIcon} tabindex="1"/></div>
+						<div onClick={() => this.transitionToFace('up')} > <img alt="Bussiness Intelligence" className={"icons-img deg90"} src={BussinesIntelligenceIcon} tabindex="2"/></div>
+						<div onClick={() => this.transitionToFace('down')} > <img alt="AR/VR" className={"icons-img deg45"} src={ARIcon} tabindex="3"/></div>
+						<div onClick={() => this.transitionToFace('back')} ><img alt="System Integration" className={"icons-img deg0"} src={SistemIntegrationIcon} tabindex="4"/></div>
 					</div>
 					<div className="wrap">
 						<div className="cube" ref="theCube">
