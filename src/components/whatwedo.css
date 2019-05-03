@@ -12,8 +12,8 @@
 }
 
 .wrap {
-    perspective: none;
-	perspective-origin: 0 0;
+    perspective: 3000px;
+	perspective-origin: 50% -300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,29 +248,29 @@
 }
 
 .deg0 {
-    transform: rotate(58deg) translate(165px) rotate(-58deg);
+    transform: rotate(50deg) translate(195px) rotate(-50deg);
 } 
 
 .deg45{
-	transform: rotate(60deg) translate(300px) rotate(-60deg);
+	transform: rotate(57deg) translate(350px) rotate(-57deg);
 }
 
 .deg90{
-	transform: rotate(90deg) translate(425px) rotate(-90deg);
+	transform: rotate(90deg) translate(480px) rotate(-90deg);
 }
 
 .deg135{
-	transform: rotate(122deg) translate(300px) rotate(-122deg);
+	transform: rotate(123deg) translate(348px) rotate(-123deg);
 }
 
 .deg180{
-	transform: rotate(122deg) translate(170px) rotate(-122deg);
+	transform: rotate(130deg) translate(195px) rotate(-130deg);
 }
 
 
 @media screen and (max-width: 768px) {
 
-	.cube-container{ margin-bottom:  70vh}
+	.cube-container{ margin-bottom:  80vh}
 
 	.cube { width: 250px;}
 
