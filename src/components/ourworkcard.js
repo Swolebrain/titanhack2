@@ -13,7 +13,7 @@ export default function OurWorkCard({urlImage, urlWebSite ,projectName, aboutPro
             <div className="card" style={direction !== "imageLeft" ? {flexDirection: 'row-reverse'}: {}} >
                 <img src={urlImage} alt={projectName} className={direction !== "imageLeft" ? "card-img-reverse" : "card-img"  } 
                     style={ style }/>
-                <div class="text-container">
+                <div className="text-container">
                     <h1 className={"project-name"}><b>{projectName}</b></h1>
                     <p className="about-project-description">{aboutProject}</p>
                     <a target="_blank" rel="noopener noreferrer" href={urlWebSite} className="btn-work" style={ style }>View Project</a>

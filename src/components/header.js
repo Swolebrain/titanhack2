@@ -10,12 +10,12 @@ import titanhacklogo from '../images/titanhack-black.png';
 const Header = ({ siteTitle }) => (
   <header>
     <div className="header-container">
-      <input type="checkbox" id="reveal-menu" role="button"></input>
+      <input type="checkbox" id="reveal-menu"  name="reveal-menu" role="button"></input>
       <div className="header-logo">
         <img src={titanhacklogo} alt="TitanHack Logo" style={{ height: '40px', width: '40px' }} />
       </div>
       <div className="nav-btn">
-        <label for="reveal-menu">
+        <label htmlFor="reveal-menu">
           <span className="span-ham"></span>
           <span className="span-ham"></span>
           <span className="span-ham"></span>

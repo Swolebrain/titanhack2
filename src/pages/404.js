@@ -6,7 +6,7 @@ import "../components/404.css"
 
 const NotFoundPage = () => (
   <>
-      <div  className={"ornament ornament-top-left"} />
+      <div className={"ornament ornament-top-left"} />
       <div className={"ornament ornament-middle-left"} />
       <div className={"ornament ornament-middle-right"} />
       <div className={"ornament ornament-bottom-right"} />
