@@ -39,7 +39,7 @@ export default class Cube extends React.Component {
 				<div className="cube-container">
 					<div className="icons-container">
 						<div onClick={() => this.transitionToFace('left')} > <img alt="Mobile Apps" className={"icons-img deg180"} src={MobileAppIcon} tabIndex="0"/></div>
-						<div onClick={() => this.transitionToFace('right')} ><img alt="Tech Strategy" className={"icons-img deg135"} src={TechStrategyIcon} tabIndex="1"/></div>
+						<div onClick={() => this.transitionToFace('right')}><img alt="Tech Strategy" className={"icons-img deg135"} src={TechStrategyIcon} tabIndex="1"/></div>
 						<div onClick={() => this.transitionToFace('up')} > <img alt="Bussiness Intelligence" className={"icons-img deg90"} src={BussinesIntelligenceIcon} tabIndex="2"/></div>
 						<div onClick={() => this.transitionToFace('down')} > <img alt="AR/VR" className={"icons-img deg45"} src={ARIcon} tabIndex="3"/></div>
 						<div onClick={() => this.transitionToFace('back')} ><img alt="System Integration" className={"icons-img deg0"} src={SistemIntegrationIcon} tabIndex="4"/></div>

@@ -313,15 +313,11 @@
 		margin: 10vh 0;
 	}
 
-	.icons {
-		overflow: hidden;
-		width: 48px;
-		height: 48px;
-		z-index: 10;
-	}
 
 	.icons-img{
 		margin-right: 4vw;
+		width: 48px;
+		height: 48px;
 	}
 
 }

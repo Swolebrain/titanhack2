@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero-squiggles{
@@ -28,12 +29,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    position: relative;
 }
-.container-text-img>img{
-     width: 40vw;
-    height: 680px;
-}
+
 
 
 .text-titanhack{
@@ -48,4 +45,16 @@ h1, h2, h1 *, h2 * {
 * {
     font-family: "Montserrat", sans-serif;
     text-align: left;
+}
+
+@media (max-width:768px) {
+    .hero-squiggles{ height: auto;}
+
+    .container-text-img{
+        align-items: center;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        padding-top: 15vw;
+        padding-bottom: 0;
+    }
 }

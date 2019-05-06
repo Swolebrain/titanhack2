@@ -81,7 +81,7 @@
 
 @media (max-width:768px) {
     .header-container{
-       background-color: aliceblue;
+       /*background-color: aliceblue;*/
     }
     
 
@@ -97,7 +97,7 @@
         top:50px;
         left: 0px;
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         transition: all 0.3s ease-in;
         background-color: aliceblue;
         z-index: 100;
