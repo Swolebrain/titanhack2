@@ -104,8 +104,6 @@ footer{
         background-size:cover;
     }
 
-    
-
     .footer-bg{
         display: flex;
         flex-direction: column;
@@ -124,5 +122,12 @@ footer{
 
     .question{
         font-size: 0.7rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-subsection{
+        padding-top: 20rem;
     }
 }

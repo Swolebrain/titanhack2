@@ -321,3 +321,13 @@
 	}
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cube-container{ margin-bottom:  55vh}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .cube-container{
+        margin-bottom:  95vh;
+    }
+}
