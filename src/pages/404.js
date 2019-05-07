@@ -6,12 +6,12 @@ import "../components/404.css"
 
 const NotFoundPage = () => (
   <>
-    
+
     <div className="container-404">
-    <div className={"ornament ornament-top-left"} />
-    <div className={"ornament ornament-middle-left"} />
-    <div className={"ornament ornament-middle-right"} />
-    <div className={"ornament ornament-bottom-right"} />
+      <div className={"ornament ornament-top-left"} />
+      <div className={"ornament ornament-middle-left"} />
+      <div className={"ornament ornament-middle-right"} />
+      <div className={"ornament ornament-bottom-right"} />
       <Header siteTitle="titanhack" />
       <div className={"main-container"}>
         <img src={CommingSoonImg} alt="pc hero" className={"working-img"} />
