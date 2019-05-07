@@ -1,6 +1,6 @@
 .section-title-container {
     display: flex;
-    margin: 15vw 0 0 0;
+    margin-top: 15rem;
 }
 
 .section-title-box {
@@ -50,10 +50,8 @@
     background-color: #ef4b6c;
 }
 
-
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .section-title-container{
-        margin-top: 60vh;
+@media screen and (max-width: 767px) {
+    .section-title-container {
+        margin: 5rem 0 0 0;
     }
 }
