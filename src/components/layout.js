@@ -42,9 +42,12 @@ const Layout = ({ children }) => (
                         <img src={phone} alt="get your mobile app from us" className={"footer__phone"} />
                         <div className={"footer-subsection"}>
                             <div className={"question"}><big><h3>Do you have a project in mind?</h3></big></div>
-                            <div className={"button-sct"}><a href="mailto:webmaster@example.com" className="btn-lets-talk">Talk with us!</a>
+                            <div className={"button-sct"}>
+                                <a href="mailto:webmaster@example.com" className="btn-lets-talk">Talk with us!</a>
                                 <div className={"footer-subsection-social-links"}>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/thecodingteacher"><img src={YouTubeImg} alt="YouTube Channel" className={"social-link"} /></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/thecodingteacher">
+                                        <img src={YouTubeImg} alt="YouTube Channel" className={"social-link"} />
+                                    </a>
                                 </div>
                             </div>
                         </div>
