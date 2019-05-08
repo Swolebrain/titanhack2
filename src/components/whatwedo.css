@@ -266,7 +266,8 @@
 .icons-img{
 	display: block;
     width: 64px;
-    height: 64px;
+	height: 64px;
+	transition: all 0.3s ease 0s;
 }
 
 .icons-img:focus {
@@ -275,6 +276,7 @@
 	outline: none;
 	transition: all 0.3s ease 0s;
 }
+
 
 .deg0 {
     transform: rotate(50deg) translate(195px) rotate(-50deg);
