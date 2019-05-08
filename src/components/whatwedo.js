@@ -13,7 +13,8 @@ export default class Cube extends React.Component {
 	state = { currentFace: 'front' };
 
 	transitionToFace = (toFace) => {
-		if (toFace === this.state.currentFace) return;
+		if (toFace === this.state.currentFace) toFace = 'front';
+	
 		if (this.state.currentFace === 'up' || this.state.currentFace === 'down') {
 			setTimeout(()=>{
 				this.refs.theCube.classList.remove('vertical');
@@ -21,7 +22,7 @@ export default class Cube extends React.Component {
 		} else if(this.state.currentFace === 'front' && (toFace === 'up' || toFace === 'down') ){
 				this.refs.theCube.classList.add('vertical');	
 		}
-
+		
 		this.refs.theCube.setAttribute('style', `animation: spin-${this.state.currentFace}-to-${toFace} 1.5s ease forwards`);
 		
 		if (toFace === 'up' || toFace === 'down') {

@@ -78,6 +78,7 @@
 	to { transform: rotateX(-360deg); }
 }
 
+/* keyframes involving front*/
 @keyframes spin-front-to-back {
 	from { transform: rotateY(0); }
 	to { transform: rotateY(180deg); }
@@ -101,6 +102,32 @@
 	to { transform: rotateX(90deg); }
 }
 
+
+@keyframes spin-back-to-front {
+	from { transform: rotateY(180deg); }
+	to { transform: rotateY(0); }
+}
+
+@keyframes spin-down-to-front {
+	from { transform: rotateX(90deg); }
+	to { transform: rotateX(0); }
+}
+
+@keyframes spin-up-to-front {
+	from { transform: rotateX(-90deg); }
+	to { transform: rotateX(0); }
+}
+@keyframes spin-right-to-front {
+	from { transform: rotateY(-90deg); }
+	to { transform: rotateY(0); }
+}
+
+@keyframes spin-left-to-front {
+	from { transform: rotateY(90deg); }
+	to { transform: rotateY(0); }
+}
+
+/*-------------------------------------*/
 
 @keyframes spin-left-to-right {
 	from { transform: rotateY(90deg); }
