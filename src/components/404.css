@@ -80,6 +80,10 @@
 
 @media screen and (max-width: 768px) {
 
+    .ornament-top-left{       
+        top:4rem;
+    }          
+
     .ornament-bottom-right{
         width: 50%;
         height: 40px;
