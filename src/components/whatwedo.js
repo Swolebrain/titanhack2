@@ -21,7 +21,7 @@ export default class Cube extends React.Component {
 		if (this.state.currentFace === 'up' || this.state.currentFace === 'down') {
 			setTimeout(()=>{
 				this.refs.theCube.classList.remove('vertical');
-			},750);
+			},  toFace === 'front' ?  2000:750 );
 		} else if(this.state.currentFace === 'front' && (toFace === 'up' || toFace === 'down') ){
 				this.refs.theCube.classList.add('vertical');	
 		}
